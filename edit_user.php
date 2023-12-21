@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Segitiga Bermuda </title>
+
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<!-- Load DAta From Database Start -->
+<?php
+include "connection.php";
+$id = $_GET["id"];
+
+$users = mysqli_query($connection, "SELECT * FROM user WHERE id_user = '$id' ");
+
+foreach ($users as $user) {
+    $nama_user = $user['nama_user'];
+    $username_user = $user['username'];
+    $password_user = $user['password'];
+    $jenis_kelamin = $user['jenis_kelamin'];
+    $email_user = $user['email_user'];
+    $no_telp = $user['no_telp'];
+    $alamat = $user['alamat'];
+    $role = $user['role'];
+}
+session_start();
+
+if (!isset($_SESSION['email_user'])) { // Periksa apakah pengguna sudah login
+    header("Location: login.php");
+    exit();
+} else {
+    // Jika sudah login
+    $userGreeting = '<li class="nav-item"><a class="nav-link" href="#">Hello, ' . $_SESSION['nama_user'] . '</a></li>';
+    $logoutButton = '<li class="nav-item"><a class="nav-link" href="backend/logout.php">Logout</a></li>';
+}
+?>
+<!-- Load DAta From Database End -->
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.php">
+                <h2>Segitiga <em>Bermuda</em></h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Management Data</a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="crud_alusista.php">alusista</a>
+                                <a class="dropdown-item active" href="crud_user.php">USER</a>
+                                <a class="dropdown-item" href="crud_categories.php">CATEGORIES</a>
+                            </div>
+                        </li>
+                        <?php echo $userGreeting; ?>
+                        <?php echo $logoutButton; ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Form Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5 justify-content-center">
+            <!-- left column -->
+            <div style="margin-top: 9rem;" class="col-md-6">
+                <!-- general form elements -->
+                <div class="card card-primary border-primary">
+                    <div class="card-header bg-primary">
+                        <h3 class="card-title mb-0 text-light">EDIT DATA USER</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form action="backend/proses_edit_user.php?id=<?php echo $id; ?>" method="post" enctype="multipart/form-data">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Nama User</label>
+                                <input type="text" class="form-control" name="nama_user" value="<?php echo $nama_user; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>username</label>
+                                <input type="text" class="form-control" name="username" value="<?php echo $username_user; ?>">
+                            </div>
+                            <div class=" form-group">
+                                <label>Password</label>
+                                <input type="text" class="form-control" name="password" value="<?php echo $password_user; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <div class="d-flex">
+                                    <div class="form-check ms-3">
+                                        <?php
+                                        if ($jenis_kelamin == 'Pria') {
+                                            echo '<input class="form-check-input" type="radio" 
+                                            name="jenis_kelamin" value="Pria" checked>';
+                                        } else {
+                                            echo '<input class="form-check-input" type="radio" 
+                                            name="jenis_kelamin" value="Pria">';
+                                        } ?>
+                                        <label class="form-check-label">
+                                            Pria
+                                        </label>
+                                    </div>
+                                    <div class="form-check ms-5">
+                                        <?php
+                                        if ($jenis_kelamin == 'Wanita') {
+                                            echo '<input class="form-check-input" type="radio" 
+                                            name="jenis_kelamin" value="Wanita" checked>';
+                                        } else {
+                                            echo '<input class="form-check-input" type="radio" 
+                                            name="jenis_kelamin" value="Wanita" ';
+                                        } ?>
+                                        <label class="form-check-label">
+                                            Wanita
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" name="email_user" value="<?php echo $email_user; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>No Telp</label>
+                                <input type="number" class="form-control" name="no_telp" value="<?php echo $no_telp; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Alamat</label>
+                                <input type="text" class="form-control" name="alamat" value="<?php echo $alamat; ?>">
+                            </div>
+                            <div class=" form-group">
+                                <label>Role</label>
+                                <select class="form-control" name="role">
+                                    <option value="ADMIN" <?php if ($role == "ADMIN") {
+                                                                echo "selected";
+                                                            } ?>>ADMIN</option>
+                                    <option value="USER" <?php if ($role == "USER") {
+                                                                echo "selected";
+                                                            } ?>>USER</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Foto User</label>
+                                <input class="form-control" type="file" name="foto_user">
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary rounded">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.card -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content">
+                        <p>Copyright © 2020 Company Name - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form">
+                        <form action="#" id="contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Pick-up location" required="">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Return location" required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Pick-up date/time" required="">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Return date/time" required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter full name" required="">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Enter email address" required="">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input type="text" class="form-control" placeholder="Enter phone" required="">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+</body>
+
+</html>
