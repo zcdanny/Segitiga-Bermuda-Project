@@ -14,7 +14,7 @@ if (!isset($_SESSION['email_user'])) {
   $logoutButton = '<li class="nav-item"><a class="nav-link" href="backend/logout.php">Logout</a></li>';
 }
 include "connection.php";
-$alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori ON alusista.id_kategori = kategori.id_kategori WHERE alusista.id_kategori = 1");
+$alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori ON alusista.id_kategori = kategori.id_kategori WHERE alusista.id_kategori = 2");
 
 ?>
 
@@ -132,7 +132,7 @@ $alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori O
                     <h4><?php echo $alusistadb['nama_alusista']; ?></h4>
                   </a>
 
-                  <h6>Jumlah : <?php echo number_format($alusistadb['jumlah']); ?></h6>
+                  <h6>Jumlah(kondisi): <?php echo number_format($alusistadb['jumlah']); ?></h6>
 
                   <p class="text-justify"><?php echo substr_replace($alusistadb['deskripsi'], " ... ", 130); ?></p>
 

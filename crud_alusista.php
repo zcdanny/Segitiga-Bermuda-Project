@@ -107,7 +107,7 @@ if (!isset($_SESSION['email_user'])) { // Periksa apakah pengguna sudah login
                             <div class="down-content">
                                 <h4><?php echo $alusistadb['nama_alusista']; ?></h4>
 
-                                <h6>Jumlah : <?php echo number_format($alusistadb['jumlah']); ?></h6>
+                                <h6>Jumlah(kondisi) : <?php echo number_format($alusistadb['jumlah']); ?></h6>
 
                                 <p class="text-justify"><?php echo substr_replace($alusistadb['deskripsi'], " ...", 130); ?></p>
 

@@ -188,12 +188,12 @@ foreach ($alusista as $value) {
   <div class="section">
     <div class="container">
       <div class="section-heading" style="border: 0">
-        <h2>Jumlah</h2>
+        <h2>Jumlah(kondisi)</h2>
       </div>
 
       <div class="row">
         <div class="col-md-6">
-          <h6>Jumlah : <?php echo number_format($jumlah); ?> / orang</h6>
+          <h6>Jumlah(kondisi) : <?php echo number_format($jumlah); ?> / orang</h6>
         </div>
       </div>
     </div>
