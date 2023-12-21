@@ -105,9 +105,9 @@ $alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori O
             <h2>Daftar alusista </h2>
             <div class="btn-group py-3">
               <a href="alusista.php" class="btn btn-secondary">Semua</a>
-              <a href="alusista_AD.php" class="btn btn-info">alusista AD</a>
+              <a href="alusista_AD.php" class="btn btn-secondary">alusista AD</a>
               <a href="alusista_AU.php" class="btn btn-secondary">alusista AU</a>
-              <a href="alusista_AL.php" class="btn btn-secondary">alusista AL</a>
+              <a href="alusista_AL.php" class="btn btn-info">alusista AL</a>
             </div>
             <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</button> -->
           </div>
@@ -157,8 +157,8 @@ $alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori O
 
         <div class="col-md-12">
           <ul class="pages">
-            <li><a href="#">1</a></li>
-            <li class="active"><a href="#">2</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
