@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2024 at 02:13 PM
+-- Generation Time: Jan 14, 2024 at 02:44 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -98,7 +98,9 @@ CREATE TABLE `komentar` (
 
 INSERT INTO `komentar` (`id_komentar`, `id_user`, `id_alusista`, `komentar`, `tgl_komentar`) VALUES
 (1, 2, 1, 'Nama Sampari sendiri diambil dari nama senjata tajam sejenis keris dari suku Mbojo (Bima dan Dompu), Nusa Tenggara Barat.', '2023-12-11'),
-(0, 0, 8, '<p><b>Stok</b></p>\r\n<p>Dari total <b>426</b> Anoa, semua dalam kondisi siap digunakan. Perlu dilakukan pemantauan stok secara berkala untuk memastikan ketersediaan dan kesiapan.</p>\r\n\r\n<p><b>Pemeliharaan</b></p>\r\n<p>Perawatan rutin dan preventif harus dijadwalkan sesuai dengan panduan pemeliharaan produsen untuk memastikan kesehatan dan kesiapan alutsista.</p>\r\n\r\n<p><b>Pengadaan</b></p>\r\n<p>Diperlukan perencanaan pengadaan suku cadang dan peralatan tambahan untuk mendukung operasional dan pemeliharaan Anoa.</p>\r\n\r\n<p><b>Pemakaian</b></p>\r\n<p>Data pemakaian harus terus dipantau untuk mengidentifikasi tren dan mengoptimalkan penggunaan. Perhatian khusus diberikan pada kondisi operasional <b>30</b> unit yang digunakan untuk latihan gabungan.</p>\r\n\r\n<p><b>Analisis Data untuk Mendukung Pengambilan Keputusan</b></p>\r\n<p>Analisis data pemeliharaan, pengadaan, dan pemakaian akan memberikan wawasan yang diperlukan untuk pengambilan keputusan yang efektif. Evaluasi kondisi dan kinerja Anoa dapat membantu dalam perencanaan anggaran, perawatan, dan upgrade sesuai kebutuhan.</p>\r\n', '2024-01-14');
+(0, 0, 8, '<p><b>Stok</b></p>\r\n<p>Dari total <b>426</b> Anoa, semua dalam kondisi siap digunakan. Perlu dilakukan pemantauan stok secara berkala untuk memastikan ketersediaan dan kesiapan.</p>\r\n\r\n<p><b>Pemeliharaan</b></p>\r\n<p>Perawatan rutin dan preventif harus dijadwalkan sesuai dengan panduan pemeliharaan produsen untuk memastikan kesehatan dan kesiapan alutsista.</p>\r\n\r\n<p><b>Pengadaan</b></p>\r\n<p>Diperlukan perencanaan pengadaan suku cadang dan peralatan tambahan untuk mendukung operasional dan pemeliharaan Anoa.</p>\r\n\r\n<p><b>Pemakaian</b></p>\r\n<p>Data pemakaian harus terus dipantau untuk mengidentifikasi tren dan mengoptimalkan penggunaan. Perhatian khusus diberikan pada kondisi operasional <b>30</b> unit yang digunakan untuk latihan gabungan.</p>\r\n\r\n<p><b>Analisis Data untuk Mendukung Pengambilan Keputusan</b></p>\r\n<p>Analisis data pemeliharaan, pengadaan, dan pemakaian akan memberikan wawasan yang diperlukan untuk pengambilan keputusan yang efektif. Evaluasi kondisi dan kinerja Anoa dapat membantu dalam perencanaan anggaran, perawatan, dan upgrade sesuai kebutuhan.</p>\r\n', '2024-01-14'),
+(0, 6, 8, '<p><b>Stok</b></p>\r\n<p>Dari total <b>426</b> Anoa, semua dalam kondisi siap digunakan. Perlu dilakukan pemantauan stok secara berkala untuk memastikan ketersediaan dan kesiapan.</p>\r\n\r\n<p><b>Pemeliharaan</b></p>\r\n<p>Perawatan rutin dan preventif harus dijadwalkan sesuai dengan panduan pemeliharaan produsen untuk memastikan kesehatan dan kesiapan alutsista.</p>\r\n\r\n<p><b>Pengadaan</b></p>\r\n<p>Diperlukan perencanaan pengadaan suku cadang dan peralatan tambahan untuk mendukung operasional dan pemeliharaan Anoa.</p>\r\n\r\n<p><b>Pemakaian</b></p>\r\n<p>Data pemakaian harus terus dipantau untuk mengidentifikasi tren dan mengoptimalkan penggunaan. Perhatian khusus diberikan pada kondisi operasional <b>30</b> unit yang digunakan untuk latihan gabungan.</p>\r\n\r\n<p><b>Analisis Data untuk Mendukung Pengambilan Keputusan</b></p>\r\n<p>Analisis data pemeliharaan, pengadaan, dan pemakaian akan memberikan wawasan yang diperlukan untuk pengambilan keputusan yang efektif. Evaluasi kondisi dan kinerja Anoa dapat membantu dalam perencanaan anggaran, perawatan, dan upgrade sesuai kebutuhan.</p>\r\n', '2024-01-14'),
+(0, 4, 14, '<p><b>Stok</b></p>\r\n<p>Dari total <b>jumlah tertentu</b> Eurocopter EC 725, semuanya dalam kondisi siap digunakan. Pemantauan stok secara berkala diperlukan untuk memastikan ketersediaan dan kesiapan.</p>\r\n\r\n<p><b>Pemeliharaan</b></p>\r\n<p>Perawatan rutin dan preventif pada Eurocopter EC 725 harus dijadwalkan sesuai dengan panduan pemeliharaan produsen guna memastikan kesehatan dan kesiapan alutsista.</p>\r\n\r\n<p><b>Pengadaan</b></p>\r\n<p>Perencanaan pengadaan suku cadang dan peralatan tambahan perlu dilakukan untuk mendukung operasional dan pemeliharaan Eurocopter EC 725.</p>\r\n\r\n<p><b>Pemakaian</b></p>\r\n<p>Data pemakaian Eurocopter EC 725 harus terus dipantau untuk mengidentifikasi tren dan mengoptimalkan penggunaan. Perhatian khusus diberikan pada kondisi operasional <b>jumlah tertentu</b> unit yang digunakan untuk latihan atau misi khusus.</p>\r\n\r\n<p><b>Analisis Data untuk Mendukung Pengambilan Keputusan</b></p>\r\n<p>Analisis data pemeliharaan, pengadaan, dan pemakaian memberikan wawasan yang diperlukan untuk pengambilan keputusan yang efektif. Evaluasi kondisi dan kinerja Eurocopter EC 725 dapat membantu dalam perencanaan anggaran, perawatan, dan upgrade sesuai kebutuhan.</p>\r\n', '2024-01-14');
 
 -- --------------------------------------------------------
 
@@ -126,7 +128,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id_user`, `nama_user`, `username`, `password`, `jenis_kelamin`, `email_user`, `no_telp`, `alamat`, `role`, `foto_user`) VALUES
 (1, 'admin', 'admin', 'admin', 'Pria', 'admin@gmail.com', '081510211241', 'Jakarta', 'ADMIN', 'person_1.jpg'),
 (2, 'Ramanda', 'danny', '123', 'Pria', 'zdanny@gmail.com', '081213161669', 'Bumen', 'USER', 'person_2.jpg'),
-(0, 'Mayjen TNI Ujang Martenis  ', 'UjangMartenis', '123', 'Pria', 'Ujang@gmail.com', '0822222229', 'Cimahi, Jawa Barat', 'USER', 'Biodata-Brigjen-Ujang.jpg');
+(4, 'Marsekal Muda TNI Dr. T.B.H. Age', 'Age Wiraksono', '123', 'Pria', 'Age@gmail.com', '0822222229323', ' Jakarta', 'USER', 'Age Wiraksono.jpg'),
+(6, 'Brigjen Ujang Martenis', 'Ujang Martenis', '123', 'Pria', 'Ujang@gmail.com', '08222222293', 'malang', 'USER', 'Biodata-Brigjen-Ujang.jpg');
 
 --
 -- Indexes for dumped tables
@@ -139,6 +142,12 @@ ALTER TABLE `alusista`
   ADD PRIMARY KEY (`id_alusista`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -147,6 +156,12 @@ ALTER TABLE `alusista`
 --
 ALTER TABLE `alusista`
   MODIFY `id_alusista` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
