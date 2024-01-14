@@ -125,7 +125,7 @@ if (!isset($_SESSION['email_user'])) { // Periksa apakah pengguna sudah login
                                 <textarea class="form-control" rows="5" name="deskripsi"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Foto Tempat</label>
+                                <label>Foto Alusista</label>
                                 <input class="form-control" type="file" name="foto_1">
                                 <label></label>
                                 <input class="form-control" type="file" name="foto_2">
@@ -162,7 +162,7 @@ if (!isset($_SESSION['email_user'])) { // Periksa apakah pengguna sudah login
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Now</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
