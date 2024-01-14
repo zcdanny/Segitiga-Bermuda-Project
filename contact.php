@@ -78,7 +78,7 @@ if (!isset($_SESSION['email_user'])) {
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 
@@ -98,7 +98,7 @@ if (!isset($_SESSION['email_user'])) {
       <div class="row">
         <div class="col-md-12">
           <div class="text-content">
-            <h4>Lorem ipsum dolor</h4>
+            <h4>--------------</h4>
             <h2>Contact Us</h2>
           </div>
         </div>
@@ -123,13 +123,14 @@ if (!isset($_SESSION['email_user'])) {
 	4. Copy only URL and paste it within the src="" field below
 -->
           <div id="map">
-            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.270756473405!2d109.24497272695312!3d-7.43526309999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ea49d9f9885%3A0x62be0b6159700ec9!2sInstitut%20Teknologi%20Telkom%20Purwokerto!5e0!3m2!1sid!2sid!4v1705199461556!5m2!1sid!2sid"
+              width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-md-4">
           <div class="left-content">
             <h4>About our office</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+            <p>Selamat datang di kantor kami yang dinamis dan modern! Di tengah segitiga bermuda kegiatan produktif, kolaborasi kreatif, dan pemanfaatan teknologi terdepan, kami menciptakan lingkungan yang mendukung pertumbuhan dan inovasi</p>
             <ul class="social-icons">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -187,7 +188,7 @@ if (!isset($_SESSION['email_user'])) {
         <div class="col-md-4">
           <img src="assets/images/team_01.jpg" class="img-fluid" alt="">
 
-          <h5 class="text-center" style="margin-top: 15px;">John Doe</h5>
+          <h5 class="text-center" style="margin-top: 15px;">Laporan Gangguan WEB</h5>
         </div>
       </div>
     </div>

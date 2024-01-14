@@ -16,7 +16,7 @@ if (!isset($_SESSION['email_user'])) {
   $signupButton = '';
   $userGreeting = '<li class="nav-item"><a class="nav-link" href="#">Hello, ' . $_SESSION['nama_user'] . '</a></li>';
   $logoutButton = '<li class="nav-item"><a class="nav-link" href="backend/logout.php">Logout</a></li>';
-  $reviewButton = '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_add_ulasan">Tambah Ulasan</button>';
+  $reviewButton = '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_add_ulasan">Tambah Pelaporan dan Analisis</button>';
 }
 
 include("connection.php");
@@ -108,7 +108,7 @@ foreach ($alusista as $value) {
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 
@@ -193,7 +193,7 @@ foreach ($alusista as $value) {
 
       <div class="row">
         <div class="col-md-6">
-          <h6>Jumlah(kondisi) : <?php echo number_format($jumlah); ?> / orang</h6>
+          <h6>Jumlah(kondisi) : <?php echo number_format($jumlah); ?> / Siap Digunakan(aktif)</h6>
         </div>
       </div>
     </div>
@@ -204,7 +204,7 @@ foreach ($alusista as $value) {
   <div class="section">
     <div class="container">
       <div class="section-heading" style="border: 0">
-        <h2>Fasilitas</h2>
+        <h2>Fasilitas(Pelatihan dan Panduan)</h2>
       </div>
       <ul class="" style="list-style: circle;">
         <?php
@@ -227,7 +227,7 @@ foreach ($alusista as $value) {
   <div class="section">
     <div class="container">
       <div class="section-heading" style="border: 0">
-        <h2>Ulasan</h2>
+        <h2>Pelaporan dan Analisis</h2>
       </div>
 
       <?php echo $reviewButton ?>
@@ -237,7 +237,7 @@ foreach ($alusista as $value) {
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="modal_add_ulasan">Tambah Ulasan</h1>
+              <h1 class="modal-title fs-5" id="modal_add_ulasan">Tambah Pelaporan dan Analisis</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -251,7 +251,7 @@ foreach ($alusista as $value) {
                   <input type="text" class="form-control" name="id_alusista" id="id_alusista" value="<?php echo $id_alusista ?>" readonly>
                 </div>
                 <div class="mb-3">
-                  <label for="komentar" class="col-form-label">Silahkan masukkan ulasan</label>
+                  <label for="komentar" class="col-form-label">Silahkan masukkan Pelaporan dan Analisis</label>
                   <textarea class="form-control" id="komentar" name="komentar" style="height: 150px"></textarea>
                 </div>
                 <div class="mb-3" hidden>
@@ -300,7 +300,7 @@ foreach ($alusista as $value) {
                 <div class="modal-dialog modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="modal_edit_ulasan">Tambah Ulasan</h1>
+                      <h1 class="modal-title fs-5" id="modal_edit_ulasan">Tambah Pelaporan dan Analisis</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form id="form_edit_ulasan" action="backend/proses_edit_komentar.php" method="POST">
@@ -340,8 +340,8 @@ foreach ($alusista as $value) {
             <h2>Map</h2>
           </div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.514450669144!2d112.7340344741299!3d-7.295949271716189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb97917c2fad%3A0x21b1122d5fe174cc!2sSurabaya%20Zoo!5e0!3m2!1sen!2sid!4v1700706040546!5m2!1sen!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15861.953979505108!2d106.906295!3d-6.3306967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ede69310587d%3A0xf0cb584e4cb456e4!2sMabes%20TNI!5e0!3m2!1sid!2sid!4v1705198692045!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
         <div class="col-md-3">
           <div class="section-heading">
@@ -353,22 +353,22 @@ foreach ($alusista as $value) {
               <span>Phone</span>
               <br>
               <strong>
-                <a href="tel:+62315678703">+62 31-5678-703</a>
+                <a href="tel:+62315678703">+62 815-1021-9081</a>
               </strong>
             </p>
             <p>
               <span>Whatsapp</span>
               <br>
               <strong>
-                <a href="https://api.whatsapp.com/send?phone=62895379933535&text=Mohon%20Infomasi%20lebih%20lengkap%20mengenai%20paket-paket%20tersebut">
-                  +62 8953-7993-3535</a>
+                <a href="https://api.whatsapp.com/send?phone=6281510219081&text=Mohon%20Infomasi%20lebih%20lengkap%20mengenai%20paket-paket%20tersebut">
+                +62 815-1021-9081</a>
               </strong>
             </p>
             <p>
               <span>Instagram</span>
               <br>
               <strong>
-                <a href="https://www.instagram.com/kebunbinatangsurabaya/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">kebunbinatangsurabaya</a>
+                <a href="https://www.instagram.com/tni_angkatan_darat/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">SegitigaBermuda</a>
               </strong>
             </p>
           </div>
@@ -378,50 +378,6 @@ foreach ($alusista as $value) {
   </div>
   <!-- end :: map & contact -->
 
-  <!-- begin :: form contact -->
-  <div class="section">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Any Question? Contact us with form below</h2>
-      </div>
-
-      <div class="contact-form">
-        <form id="contact" action="" method="post">
-          <div class="row">
-            <div class="col-sm-12">
-              <fieldset>
-                <input name="name" type="text" class="form-control" id="name" placeholder="Name" required="">
-              </fieldset>
-            </div>
-
-            <div class="col-sm-6">
-              <fieldset>
-                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
-              </fieldset>
-            </div>
-
-            <div class="col-sm-6">
-              <fieldset>
-                <input name="phone" type="text" class="form-control" id="phone" placeholder="Phone" required="">
-              </fieldset>
-            </div>
-
-            <div class="col-lg-12">
-              <fieldset>
-                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Notes" required=""></textarea>
-              </fieldset>
-            </div>
-            <div class="col-lg-12">
-              <fieldset>
-                <button type="submit" id="form-submit" class="filled-button">Send Request</button>
-              </fieldset>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- end :: form contact -->
 
   <!-- begin :: footer -->
   <footer>

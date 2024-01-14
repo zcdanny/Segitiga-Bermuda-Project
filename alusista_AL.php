@@ -14,7 +14,7 @@ if (!isset($_SESSION['email_user'])) {
   $logoutButton = '<li class="nav-item"><a class="nav-link" href="backend/logout.php">Logout</a></li>';
 }
 include "connection.php";
-$alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori ON alusista.id_kategori = kategori.id_kategori WHERE alusista.id_kategori = 2");
+$alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori ON alusista.id_kategori = kategori.id_kategori WHERE alusista.id_kategori = 1");
 
 ?>
 
@@ -82,7 +82,7 @@ $alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori O
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 

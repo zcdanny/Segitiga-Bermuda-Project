@@ -82,7 +82,7 @@ if (!isset($_SESSION['email_user'])) {
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 

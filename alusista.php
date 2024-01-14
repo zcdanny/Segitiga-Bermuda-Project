@@ -83,7 +83,7 @@ $alusistadbs = mysqli_query($connection, "SELECT * FROM alusista JOIN kategori O
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 

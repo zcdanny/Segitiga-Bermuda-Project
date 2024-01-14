@@ -83,7 +83,7 @@ $komentar = mysqli_query($connection, "SELECT komentar.*, user.nama_user, user.f
 
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                <a class="dropdown-item" href="testimonials.php">Testimonials</a>
+                <a class="dropdown-item" href="testimonials.php">Pelaporan</a>
               </div>
             </li>
 
@@ -109,14 +109,14 @@ $komentar = mysqli_query($connection, "SELECT komentar.*, user.nama_user, user.f
       </div>
       <div class="banner-item-02">
         <div class="text-content">
-          <h2>Discover New Worlds</h2>
-          <h4 class="text-light" style="font-size: large;">alusistadb to any corner of the world, without going around in circles</h4>
+          <h2>TNI</h2>
+          <h4 class="text-light" style="font-size: large;">TNI KUAT BERSAMA RAKYAT</h4>
         </div>
       </div>
       <div class="banner-item-03">
         <div class="text-content">
-          <h2>Enjoy The Ocean With Your Family</h2>
-          <h4 class="text-light" style="font-size: large;">Lets start your journey with us, your dream will come true</h4>
+          <h2>Panglima TNI Jenderal TNI Agus Subiyanto</h2>
+          <h4 class="text-light" style="font-size: large;">"Berbuat Baiklah"</h4>
         </div>
       </div>
     </div>
@@ -171,7 +171,7 @@ $komentar = mysqli_query($connection, "SELECT komentar.*, user.nama_user, user.f
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Happy Clients</h2>
+            <h2>Pelaporan dan Analisis</h2>
           </div>
         </div>
         <div class="col-md-12">
