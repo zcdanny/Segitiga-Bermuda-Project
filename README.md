@@ -16,3 +16,6 @@ Tampilan :
 ![image](https://github.com/zcdanny/Segitiga-Bermuda-Project/assets/100658079/1eca2dcc-8273-4073-bff0-d220eeb2c822)
 
 ![image](https://github.com/zcdanny/Segitiga-Bermuda-Project/assets/100658079/47f55bac-7d27-4ded-ad4a-226f997d63ae)
+
+![image](https://github.com/zcdanny/Segitiga-Bermuda-Project/assets/100658079/66a1bf1a-1153-4eb8-b17f-136986c27a08)
+
